@@ -3,11 +3,12 @@
 #-----------HEAD-------------------------------------------------------------->
 # AUTOR             : Matheus Martins 3mhenrique@gmail.com
 # HOMEPAGE          : https://github.com/mateuscomh 
-# DATA CRIAÇÃO      : 
-# PROGRAMA          : Shell-Base
+# DATA CRIAÇÃO      : 30/04/2021
+# PROGRAMA          : Organiza Diretório
 # VERSÃO            : 1.0.0
 # LICENÇA           : GPL3
-# PEQUENA-DESCRIÇÃO : Template padr�o/base para aplicações pessoais.
+# PEQUENA-DESCRIÇÃO : Script para organizar pasta (Downloads em especial) 
+#                     categorizando os arquivos para suas respectivas pastas.
 #
 # CHANGELOG         : 30/04/2021 12:00 - Criado script sob demanda de organizar
 #                     01/05/2021 21:00 - Envio para repo no github
@@ -16,7 +17,7 @@
 #-----------END-HEAD-----------------------------------------------------------<
 
 #-----------VAR---------------------------------------------------------------->
-caminho="~/Downloads"
+caminho="/home/salaam/Downloads"
 #----------END-VAR-------------------------------------------------------------<
 
 #-----------FUNC--------------------------------------------------------------->
@@ -37,12 +38,13 @@ cd "$caminho"
 [[ -d $caminho/Video ]] || mkdir $caminho/Video 
 [[ -d $caminho/Docs ]] || mkdir $caminho/Docs 
 
+#Movimentacoes dos arquivos para suas respectivas pastas
   for file in *; do
     if [[ $file == *.png || $file == *.jpg || $file == *.jpeg ]]; then
       mv "$file" "$caminho/Imagens"
 
     elif [[ $file == *.mp4 ]]; then
-      mv "$file" "$caminho/Videos"
+      mv "$file" "$caminho/Video"
 
     elif [[ $file == *.mp3 || $file == *.ogg ]]; then
       mv "$file" "$caminho/Audio"
@@ -53,7 +55,5 @@ cd "$caminho"
     elif [[ $file == *.* ]];then
       mv "$file" "$caminho/Variados"
    fi
-
   done
-
 exit 0
