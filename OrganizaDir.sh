@@ -24,10 +24,10 @@ caminho="/home/salaam/Downloads"
 #----------END-VAR-------------------------------------------------------------<
 
 #-----------FUNC--------------------------------------------------------------->
-valida_caminho{
+valida_caminho(){
 #Confirmar caminho da pasta a ser organizada
-  read -p "O caminho informado é: $caminho " -d' confirma (y)/(n)?' PERGUNTA; echo
-  if [[ $PERGUNTA == n || $PERGUNTA == N ]] then
+  read -p "Confirme o caminho: $caminho "  PERGUNTA; echo
+  if [[ $PERGUNTA == "N" || $PERGUNTA == "n" ]]; then
     exit 1
   fi
   
