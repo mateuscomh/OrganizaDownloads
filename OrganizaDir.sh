@@ -17,11 +17,14 @@
 #                     16/07/2021 11:00 - Adicionadas mais extensões de arquivos;
 #                     - Adicionada condição de checagem na pasta;
 #                     - Segregada validação como função.
-#                     19/07/2021 10:00 - Aprimorada a chegagem do caminho e ajustada a alternativa "não"
+#                     19/07/2021 10:00 - Aprimorada a chegagem do caminho e 
+# ajustada a alternativa "não"
+#                     21/07/2021 11:00 - Ajustado caminho para ser aplicado em 
+# vários usuarios
 #-----------END-HEAD-----------------------------------------------------------<
 
 #-----------VAR---------------------------------------------------------------->
-caminho="/home/salaam/Downloads"
+caminho="/home/$USER/Downloads"
 #----------END-VAR-------------------------------------------------------------<
 
 #-----------FUNC--------------------------------------------------------------->
