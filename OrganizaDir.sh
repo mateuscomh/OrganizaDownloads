@@ -37,7 +37,7 @@ valida_caminho(){
   cd "$caminho"
 
 #Valida se caminho é acessivel
-  [[ $? == 1  ]] && echo "Caminho inexistente" && exit 1
+  [[ $? == 1 ]] && echo "Caminho inexistente" && exit 1
  }
 #-----------END-FUNC-----------------------------------------------------------<
 while true; do
