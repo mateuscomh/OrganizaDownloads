@@ -3,24 +3,24 @@
 #-----------HEAD-------------------------------------------------------------->
 # AUTOR             : Matheus Martins 3mhenrique@gmail.com
 # HOMEPAGE          : https://github.com/mateuscomh 
-# DATA CRIA«√O      : 30/04/2021
-# PROGRAMA          : Organiza DiretÛrio
-# VERS√O            : 1.0.0
-# LICEN«A           : GPL3
-# PEQUENA-DESCRI«√O : Script para organizar pasta (Downloads em especial) 
+# DATA CRIA√á√ÉO      : 30/04/2021
+# PROGRAMA          : Organiza Diret√≥rio
+# VERS√ÉO            : 1.0.0
+# LICEN√áA           : GPL3
+# PEQUENA-DESCRI√á√ÉO : Script para organizar pasta (Downloads em especial) 
 #                     categorizando os arquivos para suas respectivas pastas.
 #
 # CHANGELOG         : 30/04/2021 12:00 - Criado script sob demanda de organizar.
 #                     01/05/2021 21:00 - Envio para repo no github;
-#                     - Adicionados coment·rios e identaÁ„o;
-#                     - Reduzidas condicoes de validaÁ„o de pastas.
-#                     16/07/2021 11:00 - Adicionadas mais extensıes de arquivos;
-#                     - Adicionada condiÁ„o de checagem na pasta;
-#                     - Segregada validaÁ„o como funÁ„o.
+#                     - Adicionados coment√°rios e identa√ß√£o;
+#                     - Reduzidas condicoes de valida√ß√£o de pastas.
+#                     16/07/2021 11:00 - Adicionadas mais extens√µes de arquivos;
+#                     - Adicionada condi√ß√£o de checagem na pasta;
+#                     - Segregada valida√ß√£o como fun√ß√£o.
 #                     19/07/2021 10:00 - Aprimorada a chegagem do caminho e 
-# ajustada a alternativa "n„o"
+# ajustada a alternativa "n√£o"
 #                     21/07/2021 11:00 - Ajustado caminho para ser aplicado em 
-# v·rios usuarios
+# v√°rios usuarios
 #-----------END-HEAD-----------------------------------------------------------<
 
 #-----------VAR---------------------------------------------------------------->
@@ -33,10 +33,10 @@ valida_caminho(){
   #Validar a entrada para o caminho a ser organizado.
   [[ -z $caminho ]] && echo "Caminho vazio" && exit 1
   
-#Forca o shell a ir atÈ a pasta informada em $caminho
+#Forca o shell a ir at√© a pasta informada em $caminho
   cd "$caminho"
 
-#Valida se caminho È acessivel
+#Valida se caminho √© acessivel
   [[ $? == 1 ]] && echo "Caminho inexistente" && exit 1
  }
 #-----------END-FUNC-----------------------------------------------------------<
@@ -69,8 +69,7 @@ while true; do
     elif [[ $file == *.mp3 || $file == *.ogg || $file == *.aac || $file == *.wav ]]; then
       mv "$file" "$caminho/Audio"
 
-    elif [[ $file == *.mobi || $file == *.pdf || $file == *.txt || $file == *.py
-      || $file == *.sh || $file == *.xls || $file == *.doc || $file == *.ppt || $file == *.epub  ]]; then
+    elif [[ $file == *.mobi || $file == *.pdf || $file == *.txt || $file == *.py || $file == *.sh || $file == *.xls || $file == *.doc || $file == *.ppt || $file == *.epub  ]]; then
       mv "$file" "$caminho/Docs"
 
     elif [[ $file == *.* ]];then
