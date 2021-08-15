@@ -5,7 +5,7 @@
 # HOMEPAGE          : https://github.com/mateuscomh 
 # DATA CRIAÇÃO      : 30/04/2021
 # PROGRAMA          : Organiza Diretório
-# VERSÃO            : 1.0.0
+# VERSÃO            : 1.1
 # LICENÇA           : GPL3
 # PEQUENA-DESCRIÇÃO : Script para organizar pasta (Downloads em especial) 
 #                     categorizando os arquivos para suas respectivas pastas.
@@ -21,10 +21,12 @@
 # ajustada a alternativa "não"
 #                     21/07/2021 11:00 - Ajustado caminho para ser aplicado em 
 # vários usuarios
+#                     15/08/2021 19:20 - Script com função de organizar a pasta
+# de execução no momento
 #-----------END-HEAD-----------------------------------------------------------<
 
 #-----------VAR---------------------------------------------------------------->
-caminho="/home/$USER/Downloads"
+caminho="$(pwd)"
 #----------END-VAR-------------------------------------------------------------<
 
 #-----------FUNC--------------------------------------------------------------->
