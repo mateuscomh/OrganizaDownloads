@@ -1,7 +1,9 @@
-# OrganizaDownloads
+# Organiza Downloads
 
-
-Com o fluxo grande de Downloads, os arquivos baixados
-precisam continuamente de serem organizados e caracterizados.
-Este script básico foi feito com intuito de organizar os arquivos dentro da pasta Downloads.
-Pode ser também aplicado a outras pastas.
+---
+The Download folder for me is a little mess, this program have a finaly to organizate the main folder download into a categories.
+This basic script check if the folder exist and move the files around categories.
+- Docs
+- Images
+- Video
+- Audio
