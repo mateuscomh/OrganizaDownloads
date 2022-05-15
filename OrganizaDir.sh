@@ -47,7 +47,7 @@ while true; do
       [Yy]* ) break;;
       [Nn]* ) echo "Informe a pasta a ser organizada: "; read -r caminho
               valida_caminho            
-              break;;
+              ;;
       *     ) echo "Por favor confirme com Y ou N";;
     esac
   done
